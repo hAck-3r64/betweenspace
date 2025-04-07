@@ -1,0 +1,75 @@
+@font-face {
+	font-family: "monaco";
+	src: url("monaco.ttf");
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: monaco;
+}
+
+.background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 500vh;
+	background-image: url("image/header_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+	filter: blur(10px);
+}
+
+.header{
+	margin-top: 75px;
+	image-rendering: pixelated;
+}
+
+.subt{
+	margin-bottom: 150px;
+}
+
+.title{
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+
+.col {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	text-align: center;
+	filter: grayscale() blur(5px) brightness(20%);
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.col:hover {
+	filter: blur(0px);
+}
+
+.col2 {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	text-align: center;
+}
+
+.map {
+	filter: grayscale() blur(5px) brightness(20%);
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:25px;
+}
+
+.map:hover {
+	filter: blur(0px);
+}
